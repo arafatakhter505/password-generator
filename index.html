@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="images/pass.png" type="image/x-icon" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- main section start -->
+    <main>
+      <section class="container">
+        <span class="top-title">Generate a secure password</span>
+        <div class="pass-view">
+          <span id="show-pass"></span>
+          <img id="copy-btn" src="images/copy.png" alt="" />
+        </div>
+        <div class="pass-control">
+          <div class="half-widht">
+            <div class="item-list">
+              <input type="checkbox" checked name="" id="u-case" />
+              <label for="u-case">Uppercase</label>
+            </div>
+            <div class="item-list">
+              <input type="checkbox" name="" id="l-case" />
+              <label for="l-case">Lowercase</label>
+            </div>
+            <div class="item-list">
+              <input type="checkbox" name="" id="number" />
+              <label for="number">Number</label>
+            </div>
+            <div class="item-list">
+              <input type="checkbox" name="" id="symbol" />
+              <label for="symbol">Symbol</label>
+            </div>
+          </div>
+          <div class="half-width">
+            <img src="images/pass.png" alt="" />
+          </div>
+        </div>
+        <div class="bottom">
+          <button id="generate-btn">Generate</button>
+          <div class="pass-length-area">
+            <label class="pass-length-title">Password Length</label>
+            <span id="minus">-</span>
+            <span id="pass-length">4</span>
+            <span id="plus">+</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main section end -->
+
+    <!-- cutom js -->
+    <script src="script.js"></script>
+  </body>
+</html>
